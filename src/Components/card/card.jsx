@@ -8,4 +8,4 @@ export const Card=({monster,title})=>(
         <h2>{monster.name}</h2>
         <p>{monster.email}</p>
     </div>
-)
+);

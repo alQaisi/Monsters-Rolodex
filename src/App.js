@@ -4,7 +4,6 @@ import SearchField from './Components/searchfield/searchfield.jsx';
 import './App.css';
 
 class App extends Component{
-  testFunc=a=>a**2;
   constructor(){
     super();
     this.state={
@@ -22,7 +21,6 @@ class App extends Component{
     this.setState({searchField:evt.target.value.toLowerCase()},()=>console.log(this.state.searchField));
   }
   onClick=(evt)=>{
-    console.log(evt);
     evt.target.id?this.setState({title:evt.target.id}):this.setState({title:'Monsters Rolodex'});
   }
   render(){
@@ -36,7 +34,5 @@ class App extends Component{
       </div>
     );
   }
-  
 }
-
 export default App;
